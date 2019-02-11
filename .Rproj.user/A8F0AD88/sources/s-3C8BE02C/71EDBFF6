@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1549846326360.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "71EDBFF6",
+    "lastKnownWriteTime" : 1549865040,
+    "last_content_update" : 1549865040250,
+    "path" : "~/Documents/Dev/Projects/DataScience/IntroductionStatisticalLearning/Chapter2Notes.Rmd",
+    "project_path" : "Chapter2Notes.Rmd",
+    "properties" : {
+        "cursorPosition" : "66,0",
+        "marks" : "<:35,2\n>:35,2",
+        "scrollLine" : "12",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

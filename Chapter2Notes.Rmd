@@ -1,0 +1,68 @@
+---
+title: "Chapter 2 ESLv2"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Statistical Learning
+
+* Features are also known as **predictors** or **independent variables** (I prefer this term to drill home the assumption made about these variables)
+* General model follow: $$Y = f(X) + \epsilon$$
+* f is an unknown function of that represents *systematic information*, epsilon is a random *error term*
+* **Goal of statistical learning is to estimate f**
+
+## Why estimate f?
+
+* Prediction vs  Inference
+
+### Prediction
+
+* With lots of X, but no output labels Y, predict Y using $$\hat{Y} = \hat{f}(X)$$
+* $\hat{Y}$ represented predicted output, $\hat{f} is our estimate of f.
+* **reducible** and **irreducible** error present in the accuracy of $\hat{Y}$
+* $\hat{f}$ is an estimate, and thus contains reducible error for improving it's accuracy in matching f
+* $\epsilon$ is random error which forms the irreducible error, since it is a function of $Y$ no matter how well $\hat{f}$ estimates $f$
+
+$$E(Y - \hat{Y})^2  = E[f(X) + \epsilon - \hat{f}(X)]^2$$ $$ = [f(X) - \hat{f}(X)]^2 + Var(\epsilon)$$
+
+* first term, reducible error, second is irreducible
+* Expected value/average of the squared difference between predicted and actual results.
+
+### Inference
+
+* Undersatnd relationship between predictors and repsonse
+
+## How to estimate $f$?
+
+### Parametric Methods
+
+1) Make an assumption about the form of $f$
+
+* Example, assume $f$ is linear in $X$ (**linear model**)
+* Reduces problem to merely finding a set of parameters to determine $\hat{f}$ using $X$
+
+2) After a model has been chosen (by assuming the nature of $f$), select a method to **fit** the model
+
+* Example, least squares for our linear model. Many methods exist
+
+Advantages
+
+* Requires smaller samples
+* Simple to reason about
+
+Disadvantages
+
+* May inaccurately model $f$
+* Flexible model can be picked, requires more parameters, start being subject to overfitting
+
+### Non-parametric methods
+
+* No assumptions about $f$
+* Requires MUCH more data to be accurate
+
+## Interpretation vs Flexibility
+
+* **More flexible == harder to interpret. Less flexible == easier to interpret (relationship between predictors and response)**

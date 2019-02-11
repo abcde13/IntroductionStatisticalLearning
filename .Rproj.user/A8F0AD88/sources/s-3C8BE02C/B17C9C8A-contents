@@ -1,0 +1,34 @@
+---
+title: "Chapter 1 ISLR"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Intro
+
+* Features are also known as **predictors** or **independent variables** (I prefer this term to drill home the assumption made about these variables)
+* **Quantitative** is numeric, **qualitative** is categorical, in terms of the output type
+* **Regression** is used to predict quantitative target variables, **classification** is for qualitative
+
+## History
+
+* First, **least squares method**, earliest form of **linear regression**.
+* Then, **linear discriminant analysis**.
+* After, **logistic regression**.
+* Finally, **generalized linear models**  for capturing both linear and regression models
+* Non-linear started to become feasible with computation.
+* **classification and regression trees** were introduced, along with the power of cross-validation
+* **generative additive models** for non-linear extensiosn to glm (generalized linear models)
+
+## Terminologoy
+
+* $n$ represents number of samples/observations
+* $p$ number of variables/features for each obersvation that can be used for prediction.
+* $x_{ij}$ is the $j^{th}$ variable/feature for the $i^{th}$ observation, $i = 1,2,...,n$ and $j = 1,2,...,p$
+* **X** is a matrix $n \times p$ in dimensions, of observations denoted $x_1, x_2, ..., x_n$.
+* $x_i$ is a COLUMN vector, length p. When interested in columns of **X**, vectors are **$x_1, x_2, ... x_p**$ (supposed to be bold) each of length n
+* $y_i$ is the predicted value of observation i
+* each obesrvations is $\{(x_1, y_1), ..., (x_n, y_n)\}$ where, again, $x_i$ is of length p
